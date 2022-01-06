@@ -104,7 +104,7 @@ namespace ImageSearch
 		{
 			// cv 타입이 다를 수 있어 맞춰준다
 			var grayOri = oriImg.ToGrayScale();
-			var grayFind = oriImg.ToGrayScale();
+			var grayFind = findImg.ToGrayScale();
 
 			using ( Mat oritMat = OpenCvSharp.Extensions.BitmapConverter.ToMat( grayOri ) )
 			using ( Mat findMat = OpenCvSharp.Extensions.BitmapConverter.ToMat( grayFind ) )
